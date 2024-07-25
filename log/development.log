@@ -1,0 +1,2779 @@
+Started GET "/Principal" for 127.0.0.1 at 2024-07-23 18:14:06 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: Projeto_teste_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.8.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.8.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.8.4) lib/active_record/migration.rb:648:in `connection'
+activerecord (7.0.8.4) lib/active_record/migration.rb:643:in `build_watcher'
+activerecord (7.0.8.4) lib/active_record/migration.rb:625:in `block in call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.1) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/principal" for 127.0.0.1 at 2024-07-23 18:14:11 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: Projeto_teste_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.8.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.8.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.8.4) lib/active_record/migration.rb:648:in `connection'
+activerecord (7.0.8.4) lib/active_record/migration.rb:643:in `build_watcher'
+activerecord (7.0.8.4) lib/active_record/migration.rb:625:in `block in call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.1) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/principal" for 127.0.0.1 at 2024-07-23 18:14:19 -0300
+  
+ActiveRecord::NoDatabaseError (We could not find your database: Projeto_teste_development. Which can be found in the database configuration file located at config/database.yml.
+
+To resolve this issue:
+
+- Did you create the database for this app, or delete it? You may need to create your database.
+- Has the database name changed? Check your database.yml config has the correct database name.
+
+To create your database, run:
+
+        bin/rails db:create
+):
+  
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:81:in `rescue in new_client'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.8.4) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.8.4) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.8.4) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.8.4) lib/active_record/migration.rb:648:in `connection'
+activerecord (7.0.8.4) lib/active_record/migration.rb:643:in `build_watcher'
+activerecord (7.0.8.4) lib/active_record/migration.rb:625:in `block in call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.1) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+  [1m[35m (55.0ms)[0m  [1m[35mCREATE DATABASE "Projeto_teste_development" ENCODING = 'unicode'[0m
+  [1m[35m (60.5ms)[0m  [1m[35mCREATE DATABASE "Projeto_teste_test" ENCODING = 'unicode'[0m
+  [1m[35m (38.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-07-23 21:15:44.163799"], ["updated_at", "2024-07-23 21:15:44.163799"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/principal" for 127.0.0.1 at 2024-07-23 18:15:53 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 342.5ms | Allocations: 77448)
+Completed 200 OK in 355ms (Views: 344.9ms | ActiveRecord: 0.0ms | Allocations: 81972)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-23 18:30:18 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 227.0ms | Allocations: 31198)
+Completed 200 OK in 238ms (Views: 229.7ms | ActiveRecord: 0.0ms | Allocations: 35128)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-23 19:04:57 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 31137)
+Completed 200 OK in 71ms (Views: 63.8ms | ActiveRecord: 0.0ms | Allocations: 35067)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-23 19:05:01 -0300
+  
+NameError (uninitialized constant ApplicationControler):
+  
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-07-23 19:08:11 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+NameError (uninitialized constant ApplicationControler):
+  
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-07-23 19:08:13 -0300
+  
+NameError (uninitialized constant ApplicationControler):
+  
+app/controllers/main_controller.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2024-07-23 19:09:50 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 35.5ms | Allocations: 31448)
+Completed 200 OK in 43ms (Views: 37.4ms | ActiveRecord: 0.0ms | Allocations: 35374)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 11:10:03 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 70.1ms | Allocations: 31726)
+Completed 200 OK in 87ms (Views: 73.5ms | ActiveRecord: 0.0ms | Allocations: 35652)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 11:35:19 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 47.1ms | Allocations: 20570)
+  Rendered layout layouts/application.html.erb (Duration: 47.7ms | Allocations: 20672)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.0ms | Allocations: 24542)
+
+
+  
+ActionView::Template::Error (undefined method `user_signed_in?' for #<ActionView::Base:0x0000000000afa0>):
+    26: <i class="fas fa-user"></i> <!-- Ícone de usuário -->
+    27:           </a>
+    28:           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+    29:             <% if user_signed_in? %>
+    30:               <a class="dropdown-item" href="#"><%= current_user.email %></a>
+    31:               <div class="dropdown-divider"></div>
+    32:               <%= link_to 'Logout', destroy_user_session_path, method: :delete, class: 'dropdown-item' %>
+  
+app/views/main/index.html.erb:29
+Started GET "/" for 127.0.0.1 at 2024-07-24 12:51:48 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 295)
+  Rendered layout layouts/application.html.erb (Duration: 40.0ms | Allocations: 32583)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 0.0ms | Allocations: 36453)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/gabrielle/Projeto_teste/app/views"
+  * "/home/gabrielle/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-2.0.6/app/views"
+  * "/home/gabrielle/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.0.8.4/app/views"
+  * "/home/gabrielle/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.0.8.4/app/views"
+):
+    14:   </head>
+    15: 
+    16:   <body>
+    17:    <%= render partial: "shared/navbar" %>
+    18:     <%= yield %>
+    19:   </body>
+    20: </html>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for 127.0.0.1 at 2024-07-24 12:52:01 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 2647)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2888)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_navbar with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/home/gabrielle/Projeto_teste/app/views"
+  * "/home/gabrielle/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/turbo-rails-2.0.6/app/views"
+  * "/home/gabrielle/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actiontext-7.0.8.4/app/views"
+  * "/home/gabrielle/.rbenv/versions/3.2.2/lib/ruby/gems/3.2.0/gems/actionmailbox-7.0.8.4/app/views"
+):
+    14:   </head>
+    15: 
+    16:   <body>
+    17:    <%= render partial: "shared/navbar" %>
+    18:     <%= yield %>
+    19:   </body>
+    20: </html>
+  
+app/views/layouts/application.html.erb:17
+Started GET "/" for 127.0.0.1 at 2024-07-24 12:58:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 295)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 41.1ms | Allocations: 31880)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.0ms | Allocations: 35801)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 12:58:22 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 1692)
+Completed 200 OK in 2ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 1957)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:03:34 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 295)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 146)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 31550)
+Completed 200 OK in 54ms (Views: 45.4ms | ActiveRecord: 0.0ms | Allocations: 35471)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:03:35 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1881)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2532)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:03:38 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1678)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1943)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:03:39 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 1725)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 1989)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:03:40 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1686)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1949)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:03:41 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1677)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1940)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:45:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 297)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 62.6ms | Allocations: 32028)
+Completed 200 OK in 80ms (Views: 66.0ms | ActiveRecord: 0.0ms | Allocations: 35958)
+
+
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:45:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/experiencias" for 127.0.0.1 at 2024-07-24 13:45:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/experiencias"):
+  
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:45:55 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/experiencias" for 127.0.0.1 at 2024-07-24 13:45:57 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/experiencias"):
+  
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:45:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:46:02 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:46:06 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1689)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1953)
+
+
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:46:13 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:46:13 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1887)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2535)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:46:14 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 1686)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 1951)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:46:15 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1689)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1953)
+
+
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:46:15 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:46:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:48:03 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 124)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 2271)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3085)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:48:03 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 108)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 1868)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:48:07 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 1695)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 1962)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:48:09 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1685)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1952)
+
+
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 13:48:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:48:11 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1693)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:48:12 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1683)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1947)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:49:36 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 9.8ms | Allocations: 2279)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 3096)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:38 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 1870)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2436)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:38 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1700)
+Completed 200 OK in 4ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1966)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:41 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 1677)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 1941)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:43 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1692)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1956)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:49:43 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1683)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 1949)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:44 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1665)
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1929)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:45 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1677)
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.0ms | Allocations: 1941)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 13:49:47 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1698)
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 1962)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:47 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1686)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1951)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 13:49:51 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1677)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1941)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2024-07-24 13:52:17 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_in"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 14:02:27 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 1695)
+Completed 200 OK in 51ms (Views: 40.6ms | ActiveRecord: 0.0ms | Allocations: 1959)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 14:02:28 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 1662)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 1925)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 14:02:31 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 10.1ms | Allocations: 1680)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 1945)
+
+
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20240724170441)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (50.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240724170441"]]
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (5.0ms)[0m  [1m[35mCREATE DATABASE "Projeto_teste_development" ENCODING = 'unicode'[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE DATABASE "Projeto_teste_test" ENCODING = 'unicode'[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (4.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (7.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "08635d61d1f2350de0d3061fc4a57c13959d8863"], ["created_at", "2024-07-24 17:05:48.700550"], ["updated_at", "2024-07-24 17:05:48.700550"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (36.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20240724170441)[0m
+  [1m[35m (6.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2024-07-24 17:05:48.857395"], ["updated_at", "2024-07-24 17:05:48.857395"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Update (1.2ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2024-07-24 17:05:48.864360"], ["key", "environment"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "schema_sha1"], ["value", "08635d61d1f2350de0d3061fc4a57c13959d8863"], ["created_at", "2024-07-24 17:05:48.870459"], ["updated_at", "2024-07-24 17:05:48.870459"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20240724170441)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.6ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (5.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20240724170441"]]
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT pg_advisory_unlock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:10:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20240724170441_create_users.rb
+
+
+):
+  
+activerecord (7.0.8.4) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8.4) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8.4) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8.4) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8.4) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.1) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for 127.0.0.1 at 2024-07-24 15:11:00 -0300
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20240724170441)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (23.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying NOT NULL, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20240724170441"]]
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6166970979967384230)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:00 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 106)
+  Rendered shared/_navbar.html.erb (Duration: 1.7ms | Allocations: 447)
+  Rendered layout layouts/application.html.erb (Duration: 141.0ms | Allocations: 31988)
+Completed 200 OK in 148ms (Views: 142.5ms | ActiveRecord: 0.0ms | Allocations: 34167)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:08 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1777)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:10 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1756)
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2020)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:11 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1790)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2055)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 15:11:15 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 1998)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:17 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1768)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 2033)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 15:11:20 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1765)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2027)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:21 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 1772)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2036)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:31 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1765)
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 2027)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:42 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 295)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 461)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 31809)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.0ms | Allocations: 35764)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:11:43 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1780)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 2045)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:24:26 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 371)
+  Rendered layout layouts/application.html.erb (Duration: 14.4ms | Allocations: 2502)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 3321)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 15:24:29 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1983)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 2630)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:24:35 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1784)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2050)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 15:24:38 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1771)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 2034)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:03:34 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 1795)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 2059)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 16:03:48 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 1777)
+Completed 200 OK in 10ms (Views: 10.1ms | ActiveRecord: 0.0ms | Allocations: 2039)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:03:51 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1771)
+Completed 200 OK in 3ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 2035)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:03:53 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1753)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 2017)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:03:54 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 98)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 1777)
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 2041)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:32:20 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 107)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 2278)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 3099)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:40:20 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 31.8ms | Allocations: 2321)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.0ms | Allocations: 3140)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:40:22 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1683)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 1946)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:41:04 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 104)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2048)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 2866)
+
+
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 16:41:07 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1625)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 1890)
+
+
+Started GET "/principal/login" for 127.0.0.1 at 2024-07-24 16:41:21 -0300
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for PrincipalController):
+  
+actionpack (7.0.8.4) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.8.4) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.8.4) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.1) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/login" for 127.0.0.1 at 2024-07-24 16:41:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1073)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 2456)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 3106)
+
+
+Started GET "/cadastrar" for 127.0.0.1 at 2024-07-24 16:41:58 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastrar"):
+  
+Started GET "/sign_up" for 127.0.0.1 at 2024-07-24 16:42:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 16:44:26 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1875)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 1977)
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 3.9ms | Allocations: 11068)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000b608>):
+    2: <p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/cadastrar" for 127.0.0.1 at 2024-07-24 16:46:33 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastrar"):
+  
+Started GET "/cadastra" for 127.0.0.1 at 2024-07-24 16:46:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastra"):
+  
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 16:46:56 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1277)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1365)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2132)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000bfb8>):
+    2: <p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/login" for 127.0.0.1 at 2024-07-24 16:47:10 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1154)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 143)
+  Rendered layout layouts/application.html.erb (Duration: 116.3ms | Allocations: 32331)
+Completed 200 OK in 121ms (Views: 120.7ms | ActiveRecord: 0.0ms | Allocations: 33019)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 16:47:14 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1872)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 2519)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 16:47:16 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1680)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1943)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 16:47:19 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 1675)
+Completed 200 OK in 10ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1939)
+
+
+Started GET "/cadastrar" for 127.0.0.1 at 2024-07-24 16:47:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastrar"):
+  
+Started GET "/cadastrar" for 127.0.0.1 at 2024-07-24 16:47:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastrar"):
+  
+Started GET "/cadastrar" for 127.0.0.1 at 2024-07-24 16:47:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastrar"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 16:47:27 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1686)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 1951)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 16:47:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 709)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 2077)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 2342)
+
+
+Started GET "/cadastrar" for 127.0.0.1 at 2024-07-24 16:47:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastrar"):
+  
+Started GET "/login" for 127.0.0.1 at 2024-07-24 16:50:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 973)
+  Rendered shared/_navbar.html.erb (Duration: 0.6ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 2854)
+Completed 200 OK in 12ms (Views: 10.3ms | ActiveRecord: 0.0ms | Allocations: 3676)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 16:50:05 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1274)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1362)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1921)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000d2a0>):
+    2: <p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/login" for 127.0.0.1 at 2024-07-24 17:53:05 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 11.4ms | Allocations: 1010)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 69.5ms | Allocations: 15721)
+Completed 200 OK in 76ms (Views: 73.7ms | ActiveRecord: 0.0ms | Allocations: 16625)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 17:53:06 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 703)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 2073)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 2335)
+
+
+Started GET "/cadastra" for 127.0.0.1 at 2024-07-24 17:53:20 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastra"):
+  
+Started GET "/destino" for 127.0.0.1 at 2024-07-24 17:54:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 17:54:28 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 103)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 1882)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 2529)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:02:58 -0300
+  
+SyntaxError (/home/gabrielle/Projeto_teste/config/routes.rb:10: syntax error, unexpected [, expecting `do' or '{' or '('
+  resources :users, only [:new, :create]
+                         ^
+):
+  
+config/routes.rb:10: syntax error, unexpected [, expecting `do' or '{' or '('
+config/routes.rb:10: syntax error, unexpected [, expecting `do' or '{' or '('
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:03:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/login"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 18:03:05 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 18:03:07 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 18:03:22 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/"):
+  
+Started GET "/cadastra" for 127.0.0.1 at 2024-07-24 18:03:24 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadastra"):
+  
+Started GET "/sign_up" for 127.0.0.1 at 2024-07-24 18:03:26 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+Started GET "/principal/login" for 127.0.0.1 at 2024-07-24 18:03:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/principal/login"):
+  
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 18:03:28 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/principal"):
+  
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 18:04:16 -0300
+  
+SyntaxError (/home/gabrielle/Projeto_teste/config/routes.rb:10: syntax error, unexpected [, expecting `do' or '{' or '('
+  resources :users, only [:new, :create]
+                         ^
+):
+  
+config/routes.rb:10: syntax error, unexpected [, expecting `do' or '{' or '('
+config/routes.rb:10: syntax error, unexpected [, expecting `do' or '{' or '('
+Started GET "/principal" for 127.0.0.1 at 2024-07-24 18:04:45 -0300
+Processing by PrincipalController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering principal/index.html.erb within layouts/application
+  Rendered principal/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 39.6ms | Allocations: 14666)
+Completed 200 OK in 41ms (Views: 40.7ms | ActiveRecord: 0.0ms | Allocations: 15323)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 18:04:46 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1378)
+Completed 500 Internal Server Error in 138ms (ActiveRecord: 25.0ms | Allocations: 6981)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000018ce0>):
+    2: <p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:04:47 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 788)
+  Rendered shared/_navbar.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 3196)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 4665)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 18:04:47 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 993)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1080)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 1333)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000019028>):
+    2: <p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 18:42:29 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1276)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 1364)
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 0.0ms | Allocations: 2172)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000019320>):
+    2: #<p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/" for 127.0.0.1 at 2024-07-24 18:42:34 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 103)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 138)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 2317)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.0ms | Allocations: 2960)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 18:43:37 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 7.9ms | Allocations: 290)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 2445)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 3258)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:43:38 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 13.9ms | Allocations: 993)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 2515)
+Completed 200 OK in 18ms (Views: 17.1ms | ActiveRecord: 0.0ms | Allocations: 3084)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 18:43:39 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1274)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1362)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1917)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000019820>):
+    2: #<p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:43:41 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 691)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 2152)
+Completed 200 OK in 5ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 2415)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:47:15 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 712)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 125.3ms | Allocations: 4575)
+Completed 200 OK in 126ms (Views: 126.0ms | ActiveRecord: 0.0ms | Allocations: 4836)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 18:47:16 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 691)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2137)
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 2400)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 18:47:17 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 992)
+  Rendered layout layouts/application.html.erb (Duration: 0.6ms | Allocations: 1079)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1332)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000019be0>):
+    2: #<p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 22:35:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (11.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 15.8ms | Allocations: 1875)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 1977)
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 19.4ms | Allocations: 11040)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000b608>):
+    2: #<p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+  
+ActionController::RoutingError (No route matches [GET] "/assets/application-e0cf9d8fcb18bf7f909d8d91a5e78499f82ac29523d475bf3a9ab265d5e2b451.css"):
+  
+Started GET "/login" for 127.0.0.1 at 2024-07-24 22:36:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1145)
+  Rendered layout layouts/application.html.erb (Duration: 134.8ms | Allocations: 34266)
+Completed 200 OK in 138ms (Views: 137.6ms | ActiveRecord: 0.0ms | Allocations: 34956)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 22:36:04 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1996)
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 2257)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 22:36:07 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 996)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1084)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1342)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000bf40>):
+    2: #<p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/" for 127.0.0.1 at 2024-07-24 22:36:09 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 28.8ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 29.5ms | Allocations: 294)
+  Rendered layout layouts/application.html.erb (Duration: 70.6ms | Allocations: 2233)
+Completed 200 OK in 73ms (Views: 72.2ms | ActiveRecord: 0.0ms | Allocations: 2878)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 22:36:10 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 703)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2008)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2272)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 22:37:31 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 0.4ms | Allocations: 993)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1080)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1333)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000c350>):
+    2: #<p>Find me in app/views/users/new.html.erb</p>
+    3: 
+    4: <h1>Sign Up</h1>
+    5: <%= form_with(model: @user, local: true) do |form| %>
+    6:   <div>
+    7:     <%= form.label :email %>
+    8:     <%= form.text_field :email %>
+  
+app/views/users/new.html.erb:5
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:00:04 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 48.6ms | Allocations: 2414)
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 16581)
+Completed 200 OK in 133ms (Views: 73.9ms | ActiveRecord: 18.3ms | Allocations: 22087)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:01:21 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1533)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 3161)
+Completed 200 OK in 38ms (Views: 32.4ms | ActiveRecord: 0.0ms | Allocations: 3988)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-24 23:01:42 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ramosgabrielle42@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (3.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (17.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ramosgabrielle42@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (16.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ramosgabrielle42@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 02:01:43.234708"], ["updated_at", "2024-07-25 02:01:43.234708"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 277ms (ActiveRecord: 40.5ms | Allocations: 6446)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:01:43 -0300
+Processing by MainController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 108)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 284)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 2290)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 2985)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:01:46 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1012)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 2393)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3042)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:01:47 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 719)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2024)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2288)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:11:03 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1032)
+  Rendered layout layouts/application.html.erb (Duration: 29.1ms | Allocations: 15449)
+Completed 200 OK in 37ms (Views: 36.1ms | ActiveRecord: 0.0ms | Allocations: 16358)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:11:04 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 106)
+  Rendered shared/_navbar.html.erb (Duration: 3.6ms | Allocations: 285)
+  Rendered layout layouts/application.html.erb (Duration: 15.3ms | Allocations: 2251)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 2896)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:11:06 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1597)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 2988)
+Completed 200 OK in 40ms (Views: 5.8ms | ActiveRecord: 7.0ms | Allocations: 8593)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:11:09 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 737)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2042)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 2307)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-07-24 23:11:22 -0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"ramosgabrielle42@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ramosgabrielle42@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:6:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 307ms (ActiveRecord: 2.2ms | Allocations: 1525)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:11:22 -0300
+Processing by MainController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 1830)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 2141)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:11:25 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 710)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2015)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2279)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:11:26 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 722)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2027)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2291)
+
+
+Started GET "/cadatsro" for 127.0.0.1 at 2024-07-24 23:11:36 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadatsro"):
+  
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:11:50 -0300
+  
+Zeitwerk::NameError (expected file /home/gabrielle/Projeto_teste/app/controllers/page_controller.rb to define constant PageController, but didn't):
+  
+zeitwerk (2.6.16) lib/zeitwerk/loader/callbacks.rb:32:in `on_file_autoloaded'
+zeitwerk (2.6.16) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (7.0.8.4) lib/active_support/inflector/methods.rb:278:in `const_get'
+activesupport (7.0.8.4) lib/active_support/inflector/methods.rb:278:in `constantize'
+activesupport (7.0.8.4) lib/active_support/core_ext/string/inflections.rb:74:in `constantize'
+actionpack (7.0.8.4) lib/action_dispatch/http/request.rb:90:in `controller_class_for'
+actionpack (7.0.8.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (7.0.8.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (7.0.8.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (7.0.8.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.8.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.8.4) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.9) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.9) lib/rack/etag.rb:27:in `call'
+rack (2.2.9) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.9) lib/rack/head.rb:12:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.9) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.9) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.8.4) lib/active_record/migration.rb:638:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8.4) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8.4) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8.4) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.5.1) lib/sprockets/rails/quiet_assets.rb:17:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.9) lib/rack/method_override.rb:24:in `call'
+rack (2.2.9) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.9) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8.4) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8.4) lib/rails/engine.rb:530:in `call'
+puma (5.6.8) lib/puma/configuration.rb:252:in `call'
+puma (5.6.8) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.8) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.8) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.8) lib/puma/server.rb:443:in `process_client'
+puma (5.6.8) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:12:15 -0300
+Processing by PageController#dashboard as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2668)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 16159)
+Completed 200 OK in 23ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 17215)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-07-24 23:12:19 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:12:27 -0300
+Processing by PageController#dashboard as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2327)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 3372)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms | Allocations: 3953)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:12:28 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 10)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1923)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 2445)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:14:19 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 782)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2163)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 2693)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:14:24 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1778)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2042)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:14:25 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1342)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 2727)
+Completed 200 OK in 38ms (Views: 8.8ms | ActiveRecord: 16.3ms | Allocations: 5599)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:14:25 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.7ms | Allocations: 719)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 2024)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2289)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:14:34 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1216)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 2523)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 2805)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-24 23:14:46 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eitaaa@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "eitaaa@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "eitaaa@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 02:14:46.328667"], ["updated_at", "2024-07-25 02:14:46.328667"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (18.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 305ms (ActiveRecord: 20.1ms | Allocations: 3858)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:14:46 -0300
+Processing by MainController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1825)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2093)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:17:40 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1337)
+  Rendered layout layouts/application.html.erb (Duration: 45.2ms | Allocations: 15503)
+Completed 200 OK in 55ms (Views: 47.2ms | ActiveRecord: 2.3ms | Allocations: 18290)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:17:42 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 16.6ms | Allocations: 794)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 2181)
+Completed 200 OK in 32ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 2704)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:17:54 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1256)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2576)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2856)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-24 23:18:05 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"okay@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "okay@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (3.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "okay@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 02:18:06.011348"], ["updated_at", "2024-07-25 02:18:06.011348"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 267ms (ActiveRecord: 8.0ms | Allocations: 3829)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:18:06 -0300
+Processing by PageController#dashboard as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2398)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 3481)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 4397)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-07-24 23:18:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2024-07-24 23:19:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:21:07 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 14701)
+Completed 200 OK in 18ms (Views: 18.1ms | ActiveRecord: 0.0ms | Allocations: 15230)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:21:08 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 806)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 2187)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 2709)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-07-24 23:21:13 -0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"okay@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1579)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:21:15 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1801)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2065)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:21:15 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 1814)
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 2075)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:21:16 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1339)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2722)
+Completed 200 OK in 18ms (Views: 6.2ms | ActiveRecord: 7.0ms | Allocations: 4829)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-24 23:21:39 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"outro@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "outro@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "outro@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 02:21:39.302362"], ["updated_at", "2024-07-25 02:21:39.302362"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (5.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 251ms (ActiveRecord: 8.4ms | Allocations: 3830)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:21:39 -0300
+Processing by PageController#dashboard as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2411)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 3494)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 4418)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-07-24 23:21:41 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:33:47 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 20.1ms | Allocations: 1798)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms | Allocations: 2060)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:33:49 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.1ms | Allocations: 743)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 2048)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 2312)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-07-24 23:33:59 -0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"okay@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms | Allocations: 879)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:34:01 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 1834)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2097)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-24 23:34:01 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1808)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 2069)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-24 23:34:02 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1223)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 2530)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 2808)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-24 23:34:17 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"1@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "1@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 02:34:17.616892"], ["updated_at", "2024-07-25 02:34:17.616892"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 329ms (ActiveRecord: 10.6ms | Allocations: 6357)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:34:17 -0300
+Processing by PageController#dashboard as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2313)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 3361)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3968)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-07-24 23:34:21 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-24 23:38:04 -0300
+Processing by PageController#dashboard as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2327)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 3372)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 3962)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-24 23:38:07 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 734)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 2039)
+Completed 200 OK in 5ms (Views: 4.9ms | ActiveRecord: 0.0ms | Allocations: 2302)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-07-24 23:38:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/logout" for 127.0.0.1 at 2024-07-25 00:08:59 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/cadatsro" for 127.0.0.1 at 2024-07-25 09:15:52 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/cadatsro"):
+  
+Started GET "/cadats" for 127.0.0.1 at 2024-07-25 09:16:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/cadats"):
+  
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:16:06 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 106)
+  Rendered shared/_navbar.html.erb (Duration: 2.9ms | Allocations: 345)
+  Rendered layout layouts/application.html.erb (Duration: 315.9ms | Allocations: 31278)
+Completed 200 OK in 343ms (Views: 318.9ms | ActiveRecord: 0.0ms | Allocations: 33459)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:16:17 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 1635)
+Completed 200 OK in 24ms (Views: 23.1ms | ActiveRecord: 0.0ms | Allocations: 1899)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:16:18 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 19.1ms | Allocations: 920)
+  Rendered layout layouts/application.html.erb (Duration: 51.8ms | Allocations: 2303)
+Completed 200 OK in 84ms (Views: 79.1ms | ActiveRecord: 0.0ms | Allocations: 2955)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:16:22 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 55.7ms | Allocations: 2140)
+  Rendered layout layouts/application.html.erb (Duration: 58.6ms | Allocations: 3525)
+Completed 200 OK in 465ms (Views: 62.4ms | ActiveRecord: 70.4ms | Allocations: 9324)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:16:29 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.0ms | Allocations: 552)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 1857)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 2122)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-07-25 09:16:33 -0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"1@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 741)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:26:12 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 1.8ms | Allocations: 285)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 15092)
+Completed 200 OK in 37ms (Views: 35.2ms | ActiveRecord: 0.0ms | Allocations: 16003)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:26:12 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.4ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 1632)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1894)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:26:14 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 20.5ms | Allocations: 845)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 2226)
+Completed 200 OK in 35ms (Views: 34.7ms | ActiveRecord: 0.0ms | Allocations: 2875)
+
+
+Started POST "/login" for 127.0.0.1 at 2024-07-25 09:26:17 -0300
+Processing by SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "email"=>"1@gmail.com", "password"=>"[FILTERED]", "commit"=>"Login"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 1415)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/sessions_controller.rb:6:in `create'
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:37:26 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 121)
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 14537)
+Completed 200 OK in 13ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 15069)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:37:26 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 1635)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 1897)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:37:28 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 612)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 1993)
+Completed 200 OK in 41ms (Views: 31.6ms | ActiveRecord: 0.0ms | Allocations: 2515)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:37:28 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 27.2ms | Allocations: 1444)
+  Rendered layout layouts/application.html.erb (Duration: 31.1ms | Allocations: 2829)
+Completed 200 OK in 199ms (Views: 34.9ms | ActiveRecord: 45.6ms | Allocations: 8449)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-25 09:37:40 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eba@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (24.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "eba@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (17.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "eba@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 12:37:40.556128"], ["updated_at", "2024-07-25 12:37:40.556128"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 426ms (ActiveRecord: 50.6ms | Allocations: 6278)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-25 09:37:40 -0300
+Processing by PageController#dashboard as TURBO_STREAM
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2690)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3816)
+Completed 200 OK in 36ms (Views: 9.5ms | ActiveRecord: 2.1ms | Allocations: 6015)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:37:42 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 565)
+  Rendered layout layouts/application.html.erb (Duration: 11.9ms | Allocations: 1871)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 0.0ms | Allocations: 2136)
+
+
+Started GET "/logout" for 127.0.0.1 at 2024-07-25 09:37:43 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-25 09:41:21 -0300
+Processing by PageController#dashboard as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 25.4ms | Allocations: 2679)
+  Rendered shared/_navbar.html.erb (Duration: 12.8ms | Allocations: 257)
+  Rendered layout layouts/application.html.erb (Duration: 66.7ms | Allocations: 16648)
+Completed 200 OK in 125ms (Views: 71.1ms | ActiveRecord: 33.3ms | Allocations: 21233)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:41:23 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 3875)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 4803)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 5470)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-25 09:41:55 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"Cintia@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign Up"}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "Cintia@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "Cintia@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 12:41:55.369271"], ["updated_at", "2024-07-25 12:41:55.369271"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 226ms (ActiveRecord: 4.5ms | Allocations: 3614)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-25 09:41:55 -0300
+Processing by PageController#dashboard as TURBO_STREAM
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2283)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 85)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3374)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.6ms | Allocations: 4408)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:41:57 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 120)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 1867)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2513)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:41:58 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 1660)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 1926)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:42:04 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 25.5ms | Allocations: 3386)
+  Rendered layout layouts/application.html.erb (Duration: 43.2ms | Allocations: 4292)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms | Allocations: 4571)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:43:45 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.4ms | Allocations: 3851)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5027)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.0ms | Allocations: 5861)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:44:16 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 103)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 2080)
+Completed 200 OK in 19ms (Views: 18.7ms | ActiveRecord: 0.0ms | Allocations: 2646)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:44:21 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 3320)
+  Rendered layout layouts/application.html.erb (Duration: 10.2ms | Allocations: 4222)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms | Allocations: 4502)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:47:50 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 3318)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 4499)
+Completed 200 OK in 21ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 5398)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:47:55 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 103)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 278)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 2068)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms | Allocations: 2634)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:47:57 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2832)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 3732)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 3997)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:48:04 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 94)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 1654)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:50:22 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 277)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 2314)
+Completed 200 OK in 24ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 3128)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:50:22 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 17.7ms | Allocations: 3277)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 4196)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.0ms | Allocations: 4766)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:51:09 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.8ms | Allocations: 277)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 2311)
+Completed 200 OK in 29ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 3128)
+
+
+Started GET "/signup" for 127.0.0.1 at 2024-07-25 09:51:10 -0300
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.9ms | Allocations: 3875)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 4796)
+Completed 200 OK in 17ms (Views: 15.2ms | ActiveRecord: 0.0ms | Allocations: 5382)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-25 09:51:34 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ig@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Cadastrar"}
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (2.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ig@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.4ms | Allocations: 3804)
+  Rendered shared/_navbar.html.erb (Duration: 0.3ms | Allocations: 101)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4916)
+Completed 200 OK in 470ms (Views: 14.2ms | ActiveRecord: 20.8ms | Allocations: 11043)
+
+
+Started POST "/users" for 127.0.0.1 at 2024-07-25 09:51:43 -0300
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"ig@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Cadastrar"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "ig@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mUser Create (2.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "ig@gmail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2024-07-25 12:51:43.756997"], ["updated_at", "2024-07-25 12:51:43.756997"]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (17.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Redirected to http://localhost:3000/dashboard
+Completed 302 Found in 276ms (ActiveRecord: 20.7ms | Allocations: 3326)
+
+
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-25 09:51:43 -0300
+Processing by PageController#dashboard as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 3.5ms | Allocations: 2599)
+  Rendered shared/_navbar.html.erb (Duration: 0.1ms | Allocations: 93)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 3676)
+Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 5041)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:51:50 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 13.4ms | Allocations: 3251)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 4171)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 4742)
+
+
+Started GET "/destino" for 127.0.0.1 at 2024-07-25 09:53:18 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/destino"):
+  
+Started GET "/dashboard" for 127.0.0.1 at 2024-07-25 09:53:18 -0300
+Processing by PageController#dashboard as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:5:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering page/dashboard.html.erb within layouts/application
+  Rendered page/dashboard.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2649)
+  Rendered shared/_navbar.html.erb (Duration: 0.5ms | Allocations: 256)
+  Rendered layout layouts/application.html.erb (Duration: 30.4ms | Allocations: 4197)
+Completed 200 OK in 41ms (Views: 33.7ms | ActiveRecord: 0.4ms | Allocations: 5675)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:53:21 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 103)
+  Rendered shared/_navbar.html.erb (Duration: 0.2ms | Allocations: 114)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1845)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 2411)
+
+
+Started GET "/login" for 127.0.0.1 at 2024-07-25 09:58:12 -0300
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3323)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 16932)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 17844)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:58:15 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 104)
+  Rendered shared/_navbar.html.erb (Duration: 0.7ms | Allocations: 283)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 2074)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 2720)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:58:55 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 1.0ms | Allocations: 277)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 2321)
+Completed 200 OK in 15ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 3135)
+
+
+Started GET "/" for 127.0.0.1 at 2024-07-25 09:59:19 -0300
+Processing by MainController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering main/index.html.erb within layouts/application
+  Rendered main/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 105)
+  Rendered shared/_navbar.html.erb (Duration: 1.1ms | Allocations: 277)
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | Allocations: 2337)
+Completed 200 OK in 22ms (Views: 20.9ms | ActiveRecord: 0.0ms | Allocations: 3152)
+
+
