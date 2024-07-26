@@ -3,3 +3,6 @@ Site em desenvolvimento para mochileiros e voluntarios encontrarem hospedagem de
 
 *Linguagens de programação e frameworks utlizadas:
 - HTML, CSS, JavaScript, Ruby on Rails, ANgular e Boostrap;
+
+Gems:
+- BCypt;
