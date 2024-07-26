@@ -8,7 +8,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to dashboard_path, notice: "Entrada com sucesso!"
     else
-      flash.now[:alert] = "E-mail ou senha invalida. Tente NOvamente!"
+      flash.now[:danger] = "E-mail ou senha invalida. Tente NOvamente!"
       render :new
     end
   end
