@@ -1,4 +1,4 @@
-![Descrição do Banner](app/assets/banner_page-0001.jpg)
+<img src="app/assets/banner_page-0001.jpg" width="600" height="200">
 
 
 # Projeto Host para voluntarios e mochileiros
