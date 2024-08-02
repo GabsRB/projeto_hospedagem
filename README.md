@@ -1,4 +1,4 @@
-![Descrição do Banner](C:\Users\gabbr\Downloads\banner.pdf)
+![Descrição do Banner](C:\Users\gabbr\Downloads\banner.jpg)
 
 
 # Projeto Host para voluntarios e mochileiros
