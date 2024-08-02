@@ -1,4 +1,4 @@
-<img src="app/assets/banner_page-0001.jpg" width="500" height="400">
+<img src="app/assets/banner_page-0001.jpg" width="500" height="350">
 
 
 # Projeto Host para voluntarios e mochileiros
