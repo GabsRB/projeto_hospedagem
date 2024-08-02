@@ -1,4 +1,4 @@
-![Descrição do Banner](app/assets/banner.jpg)
+![Descrição do Banner](app/assets/banner_page-0001.jpg)
 
 
 # Projeto Host para voluntarios e mochileiros
