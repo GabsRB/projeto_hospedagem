@@ -1,4 +1,4 @@
-![Descrição do Banner](C:\Users\gabbr\Downloads\banner.jpg)
+![Descrição do Banner](app/assets/banner.jpg)
 
 
 # Projeto Host para voluntarios e mochileiros
