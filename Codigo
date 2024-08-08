@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="<%= asset_path 'stylesheets/application.css' %>">
+</head>
+<body>
+  <div class="register-container">
+    <form action="<%= users_path %>" method="post">
+      <%= csrf_meta_tags %>
+      <h1>Crie sua conta</h1>
+      <label for="email">Endereço de E-mail *</label>
+      <input type="email" name="user[email]" required>
+      
+      <label for="password">Senha *</label>
+      <input type="password" name="user[password]" required>
+      
+      <label for="password_confirmation">Repita Senha *</label>
+      <input type="password" name="user[password_confirmation]" required>
+      
+      <button type="submit">Próximo</button>
+      <p>Já possui uma conta? <a href="<%= login_path %>">Entrar</a></p>
+    </form>
+  </div>
+</body>
+</html>
+
+class UsersController < ApplicationController
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.new(user_params)
+    if @user.save
+      UserMailer.welcome_email(@user).deliver_now
+      redirect_to select_user_type_path(@user)
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def user_params
+    params.require(:user).permit(:email, :password, :password_confirmation)
+  end
+end
+```
+
+class UserMailer < ApplicationMailer
+  default from: 'no-reply@voluntoca.com'
+
+  def welcome_email(user)
+    @user = user
+    @url  = 'http://voluntoca.com/login'
+    mail(to: @user.email, subject: 'Bem-vindo ao VolunToca')
+  end
+end
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escolher Tipo de Usuário</title>
+  <link rel="stylesheet" href="<%= asset_path 'stylesheets/application.css' %>">
+</head>
+<body>
+  <div class="user-type-container">
+    <h1>Qual o seu tipo de Usuário?</h1>
+    <form action="<%= update_user_type_path(@user) %>" method="post">
+      <%= csrf_meta_tags %>
+      <input type="hidden" name="_method" value="patch">
+      <button type="submit" name="user[type]" value="voluntario">Voluntário</button>
+      <button type="submit" name="user[type]" value="anfitriao">Anfitrião</button>
+    </form>
+    <a href="<%= signup_path %>">Voltar</a>
+  </div>
+</body>
+</html>
+
+def update_user_type
+  @user = User.find(params[:id])
+  if @user.update(user_type_params)
+    if @user.type == 'voluntario'
+      redirect_to voluntario_dashboard_path
+    elsif @user.type == 'anfitriao'
+      redirect_to anfitriao_dashboard_path
+    end
+  else
+    render :select_user_type
+  end
+end
+
+private
+
+def user_type_params
+  params.require(:user).permit(:type)
+end
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="<%= asset_path 'stylesheets/application.css' %>">
+</head>
+<body>
+  <div class="login-container">
+    <form action="<%= login_path %>" method="post">
+      <%= csrf_meta_tags %>
+      <h1>Entrar em sua conta</h1>
+      <label for="email">Endereço de E-mail *</label>
+      <input type="email" name="session[email]" required>
+      
+      <label for="password">Senha *</label>
+      <input type="password" name="session[password]" required>
+      
+      <button type="submit">Entrar</button>
+      <p>Não tem uma conta? <a href="<%= signup_path %>">Cadastrar</a></p>
+    </form>
+  </div>
+</body>
+</html>
+
+class SessionsController < ApplicationController
+  def new
+  end
+
+  def create
+    user = User.find_by(email: params[:session][:email].downcase)
+    if user && user.authenticate(params[:session][:password])
+      log_in user
+      redirect_to user_dashboard_path(user)
+    else
+      flash.now[:danger] = 'Email ou senha inválidos'
+      render :new
+    end
+  end
+
+  def destroy
+    log_out
+    redirect_to root_path
+  end
+end
+```
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alterar Senha</title>
+  <link rel="stylesheet" href="<%= asset_path 'stylesheets/application.css' %>">
+</head>
+<body>
+  <div class="password-reset-container">
+    <form action="<%= password_reset_path %>" method="post">
+      <%= csrf_meta_tags %>
+      <h1>Alterar a senha:</h1>
+      <label for="password">Nova Senha *</label>
+      <input type="password" name="user[password]" required>
+      
+      <label for="password_confirmation">Repita Senha *</label>
+      <input type="password" name="user[password_confirmation]" required>
+      
+      <button type="submit">Alterar</button>
+    </form>
+  </div>
+</body>
+</html>
+
+class PasswordResetsController < ApplicationController
+  def edit
+    @user = User.find_by(email: params[:email])
+  end
+
+  def update
+    @user = User.find_by(email: params[:email])
+    if @user.update(password_params)
+      redirect_to login_path, notice: 'Senha alterada com sucesso'
+    else
+      render :edit
+    end
+  end
+
+  private
+
+  def password_params
+    params.require(:user).permit(:password, :password_confirmation)
+  end
+end
+
+Rails.application.routes.draw do
+  root 'home#index'
+  get 'signup', to: 'users#new'
+  post 'users', to: 'users#create'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
+  get 'select_user_type/:id', to: 'users#select_user_type', as: 'select_user_type'
+  patch 'update_user_type/:id', to: 'users#update_user_type', as: 'update_user_type'
+  get 'password_reset', to: 'password_resets#edit'
+  patch 'password_reset', to: 'password_resets#update'
+end
+```
+
+
+class User < ApplicationRecord
+  has_secure_password
+  validates :email, presence: true, uniqueness: true, format: { with: URI::MailTo::EMAIL_REGEXP }
+  validates :password, presence: true, length: { minimum: 6 }, confirmation: true
+  validates :password_confirmation, presence: true
+end
+ 
