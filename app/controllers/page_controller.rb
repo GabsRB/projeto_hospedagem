@@ -3,6 +3,7 @@ class PageController < ApplicationController
   
     def dashboard
       @user = current_user
+      render 
     end
   
     private

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastro</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+<body>
+</body>
+<h1>Escolha seu tipo de usuário</h1>
+
+<%= form_with(url: set_user_type_path, method: :patch, local: true) do |form| %>
+  <div class="user-types">
+    <div class="user-type">
+      <%= form.radio_button :user_type, 'volunteer' %>
+      <%= form.label :user_type_volunteer, 'Voluntário' %>
+    </div>
+    <div class="user-type">
+      <%= form.radio_button :user_type, 'host' %>
+      <%= form.label :user_type_host, 'Anfitrião' %>
+    </div>
+  </div>
+  <div class="actions">
+    <%= form.submit 'Próximo' %>
+  </div>
+<% end %>
+<script>
+  function setUserTypeAndSubmit(type) {
+    document.getElementById('user_type').value = type;
+    document.forms[0].submit();
+  }
+</script>
+
+</body>
+</html>
+
+

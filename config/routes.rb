@@ -1,32 +1,39 @@
 Rails.application.routes.draw do
-  #get 'users/new'
-  #get 'users/create'
-  #get 'sessions/new'
-  #get 'sessions/create'
-  #get 'sessions/destroy'
-  
-  #Rota para a ação index do controlador Main
-  root "main#index"
-  #Rota para a ação Index do controlador Principal
-  get "principal/index", to: "principal#index"
-  #Rota para o controlador principal
-  resources :principal
+  get 'home/index'
 
-  #Ira exibir o formulario de cadastro
-  get 'signup', to: 'users#new'
-  #Analisa o formulario de cadastro preenchido
+  # Define a rota raiz (minha página inicial) para minha aplicação. 
+  # Sendo assim, quando acessar meu domínio princial(localhost..), ele sera direcionado para ação index do ocntroller main
+  root 'main#index'
+ 
+  # Cria uma rota que responde a ação do GET para o URL '/signup'
+  # Exibe formulário de registro
+  get 'signup', to: 'users#new', as: 'signup'
+
+  # Cria uma rota que responde a ação do GET para o URL '/signup'
+  # Procesa os dados preenchidos no formulário de registro e cria um novo usuario
   post 'signup', to: 'users#create'
 
-  #Exibe formulario de login
-  get 'login', to: 'sessions#new'
-  #Analisa o formulario de login preenchido
+  # Cria uma rota que responde a ação do GET para o URL '/login'
+  # Exibe formulário de entrada
+  get 'login', to: 'sessions#new', as: 'login'
+
+  # Cria uma rota que responde a ação do POST para o URL '/login'
+  # Procesa os dados preenchidos no formulário de entrada para validação
   post 'login', to: 'sessions#create'
-  #Processa a ação logout
+
+  # Cria uma rota que responde a ação do DELETE para o URL '/logout'
+  # Destroi a sessão atual
   delete 'logout', to: 'sessions#destroy'
 
+  get 'user_type', to: 'users#user_type'
+  patch 'set_user_type', to: 'users#set_user_type'
+  get 'volunteer_dashboard', to: 'dashboards#volunteer'
+  get 'host_dashboard', to: 'dashboards#host'
+
   #Rota para o controlador users
-  resources :users
+  resources :users, only: [:new, :create, :edit, :update, :destroy]
 
   #Rota para a ação Dashboard do controlador page
   get 'dashboard', to: 'page#dashboard'
+  #resources  :edit
 end
