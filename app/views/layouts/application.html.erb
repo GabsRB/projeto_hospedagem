@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ProjetoTeste</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <%= csrf_meta_tags %>
@@ -16,87 +15,121 @@
 
   <style>
   body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+    margin: 0;
+  }
 
-.navbar {
-  background-color: #F3EDED;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
-  width: 100%;
-  top: 0;
-  z-index: 1000;
-}
+  .navbar {
+    background-color: #F3EDED;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
 
-.logo {
-  display: flex;
-  align-items: center;
-}
+  .logo {
+    display: flex;
+    align-items: center;
+  }
 
-.logo-image {
-  height: 40px;
-  margin-right: 10px;
-}
+  .logo-image {
+    height: 40px;
+    margin-right: 5px;
+    display: flex;
+  }
 
-.site-name {
-  font-size: 24px;
-  color: #543333;
+  .site-name {
+    font-size: 24px;
+    color: #543333;
+    font-weight: bold;
+    font-family: Unna;
+  }
+
+  .nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: Unna;
+    color: #000000;
+    font-weight: regular;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+  }
+
+  .nav-links a.active {
+    font-weight: bold;
+    color: #000000; 
+  }
+
+  .nav-links a:hover {
+    color: #31421F; 
+    border-bottom: 2px solid #31421F; 
+  }
+
+  .nav-links .dropdown {
+    position: relative;
+  }
+
+  .nav-links .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #F3EDED;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: 8px;
+  }
+
+  .nav-links .dropdown-content li {
+    padding: 12px 16px;
+  }
+
+  .nav-links .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .nav-links .dropdown-content a {
+    color: #543333;
+    text-decoration: none;
+  }
+
+  .nav-links .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .nav-links .btn-green {
+    background-color: #527332;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px; /* Formato arredondado */
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .nav-links .btn-green:hover {
+    background-color: #B3D491;
+  }
+
+  .nav-links .home-link {
   font-weight: bold;
+  color: #000000;
+  border-bottom: 2px solid #000000;
 }
 
-.nav-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-links li {
-  margin: 0 15px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #543333;
-  font-size: 18px;
-}
-
-.nav-links a.active {
-  border-bottom: 2px solid #543333;
-}
-
-.nav-links .dropdown {
-  position: relative;
-}
-
-.nav-links .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #F3EDED;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-  margin-top: 8px;
-}
-
-.nav-links .dropdown-content li {
-  padding: 12px 16px;
-}
-
-.nav-links .dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.nav-links .dropdown-content a {
-  color: #543333;
-  text-decoration: none;
-}
-
-.nav-links .dropdown-content a:hover {
-  background-color: #ddd;
+.nav-links .home-link:hover {
+  color: #000000; /* Manter a cor preta */
+  border-bottom: 2px solid #000000; 
 }
   </style>
 
@@ -105,10 +138,10 @@
   <nav class="navbar">
     <div class="logo">
       <%= image_tag 'logo.png', alt: 'Logo', class: 'logo-image' %> 
-      <span class="site-name">VolunToca</span>
+      <span class="site-name"><em>VolunToca<em/></span>
     </div>
     <ul class="nav-links">
-      <li><%= link_to 'Home', root_path, class: 'active' %></li>
+      <li class="home"><%= link_to 'Home', root_path, class: 'home-link' %></li>
       <li class="dropdown">
         <%= link_to 'Destinos', '#' %>
         <ul class="dropdown-content">
@@ -125,8 +158,8 @@
         </ul>
       </li>
       <li><%= link_to 'Sobre Nós', '#' %></li>
-      <li><%= link_to 'Registrar', signup_path %></li>
-      <li><%= link_to 'Entrar', login_path %></li>
+      <li><%= link_to 'Registrar', signup_path, class: 'btn-green' %></li>
+      <li><%= link_to 'Entrar', login_path, class: 'btn-green' %></li>
     </ul>
   </nav>
   <% end %>

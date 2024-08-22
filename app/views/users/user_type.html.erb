@@ -11,29 +11,34 @@
 </head>
 <body>
 </body>
-<h1>Escolha seu tipo de usuário</h1>
-
-<%= form_with(url: set_user_type_path, method: :patch, local: true) do |form| %>
-  <div class="user-types">
-    <div class="user-type">
-      <%= form.radio_button :user_type, 'volunteer' %>
-      <%= form.label :user_type_volunteer, 'Voluntário' %>
-    </div>
-    <div class="user-type">
-      <%= form.radio_button :user_type, 'host' %>
-      <%= form.label :user_type_host, 'Anfitrião' %>
-    </div>
+<%= form_with(model: @user, local: true) do |f| %>
+  <div class="field">
+    <%= f.label :email %>
+    <%= f.email_field :email %>
   </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= f.label :user_type, "Tipo de Usuário" %><br>
+    <%= f.radio_button :user_type, 'voluntário' %>
+    <%= f.label :user_type_voluntário, "Voluntário" %><br>
+    <%= f.radio_button :user_type, 'anfitrião' %>
+    <%= f.label :user_type_anfitrião, "Anfitrião" %>
+  </div>
+
   <div class="actions">
-    <%= form.submit 'Próximo' %>
+    <%= f.submit "Próximo" %>
   </div>
 <% end %>
-<script>
-  function setUserTypeAndSubmit(type) {
-    document.getElementById('user_type').value = type;
-    document.forms[0].submit();
-  }
-</script>
 
 </body>
 </html>

@@ -27,13 +27,12 @@ Rails.application.routes.draw do
 
   get 'user_type', to: 'users#user_type'
   patch 'set_user_type', to: 'users#set_user_type'
-  get 'volunteer_dashboard', to: 'dashboards#volunteer'
-  get 'host_dashboard', to: 'dashboards#host'
-
-  #Rota para o controlador users
-  resources :users, only: [:new, :create, :edit, :update, :destroy]
+  get 'dashboard_volunteer', to: 'dashboards#volunteer', as: 'dashboard_volunteer'
+  get 'dashboard_host', to: 'dashboards#host', as: 'dashboard_host'
 
   #Rota para a ação Dashboard do controlador page
   get 'dashboard', to: 'page#dashboard'
   #resources  :edit
+ 
+  resources :users, only: [:new, :create]
 end
