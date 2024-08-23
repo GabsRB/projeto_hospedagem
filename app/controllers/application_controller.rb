@@ -10,12 +10,14 @@ class ApplicationController < ActionController::Base
   end
 
   def authenticate_user!
-    unless current_user
-      redirect_to login_path, alert: "Você precisa estar logado para acessar essa página."
-    end
+    redirect_to root_path unless current_user.user_type == expected_user_type
   end
   
   def logged_in?
     !!current_user
+  end
+  
+  def expected_user_type
+    raise NotImplementedError
   end
 end

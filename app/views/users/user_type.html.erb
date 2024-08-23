@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Cadastro</title>
+  <title>Tipo de Usuário</title>
   <%= csrf_meta_tags %>
   <%= csp_meta_tag %>
 
   <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
 </head>
 <body>
-</body>
-<%= form_with(model: @user, local: true) do |f| %>
-  <div class="field">
-    <%= f.label :email %>
-    <%= f.email_field :email %>
-  </div>
+<h1>Escolha o Tipo de Usuário</h1>
 
-  <div class="field">
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-  </div>
+<%= form_with model: @user, url: set_user_type_path(@user), method: :patch do |form| %>
+  <%= form.label :user_type_voluntario, "Voluntário" %>
+  <%= form.radio_button :user_type, 'voluntario' %>
 
-  <div class="field">
-    <%= f.label :password_confirmation %>
-    <%= f.password_field :password_confirmation %>
-  </div>
+  <%= form.label :user_type_anfitriao, "Anfitrião" %>
+  <%= form.radio_button :user_type, 'anfitriao' %>
 
-  <div class="field">
-    <%= f.label :user_type, "Tipo de Usuário" %><br>
-    <%= f.radio_button :user_type, 'voluntário' %>
-    <%= f.label :user_type_voluntário, "Voluntário" %><br>
-    <%= f.radio_button :user_type, 'anfitrião' %>
-    <%= f.label :user_type_anfitrião, "Anfitrião" %>
-  </div>
-
-  <div class="actions">
-    <%= f.submit "Próximo" %>
-  </div>
+  <%= form.submit "Próximo" %>
 <% end %>
-
 </body>
 </html>
-
-

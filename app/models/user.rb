@@ -6,4 +6,5 @@ class User < ApplicationRecord
     validates :password, presence: true, length: { minimum: 6 }, confirmation: true
     validates :password_confirmation, presence: true
     before_save { self.email = email.downcase }
+    validates :user_type, presence: true, inclusion: { in: %w(voluntario anfitriao) }
 end

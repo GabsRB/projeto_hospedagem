@@ -26,36 +26,17 @@
   </style>
 </head>
 <body>
-  <div class="form-container">
-    <h1 class="text-center">Cadastro</h1>
-    <%= form_with(model: @user, local: true) do |form| %>
-      <% if @user.errors.any? %>
-      <div id="error_explanation">
-        <h2><%= pluralize(@user.errors.count, "error") %> proibiu este usuário de ser salvo:</h2>
-        <ul>
-          <% @user.errors.full_messages.each do |message| %>
-            <li><%= message %></li>
-          <% end %>
-        </ul>
-      </div>
-      <% end %>
-      <div class="form-group">
-        <%= form.label :email %>
-        <%= form.text_field :email, class: 'form-control' %>
-      </div>
-      <div class="form-group">
-        <%= form.label :password %>
-        <%= form.password_field :password, class: 'form-control' %>
-      </div>
-      <div class="form-group">
-        <%= form.label :password_confirmation %>
-        <%= form.password_field :password_confirmation, class: 'form-control' %>
-      </div>
-      <div class="text-center">
-        <%= form.submit "Cadastrar", class: 'btn btn-primary' %>
-      </div>
-      <p>Já possui uma conta? <%= link_to 'Entrar', login_path %></p>
-    <% end %>
-  </div>
+<%= form_with model: @user, local: true do |form| %>
+  <%= form.label :email %>
+  <%= form.email_field :email %>
+
+  <%= form.label :password %>
+  <%= form.password_field :password %>
+
+  <%= form.label :password_confirmation %>
+  <%= form.password_field :password_confirmation %>
+
+  <%= form.submit "Próximo" %>
+<% end %>
 </body>
 </html>
