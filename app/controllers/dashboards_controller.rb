@@ -1,17 +1,20 @@
 class DashboardController < ApplicationController
-  
-  
-    def volunteer
-      
-    end
+  before_action :authenticate_user!
+  before_action :check_user_type
 
-    def host
-      
-    end
-  
-    private
-  
-    
+  def voluntario
   end
 
-  
+  def anfitriao
+  end
+
+  private
+
+  def check_user_type
+    if action_name == 'volunteer' && current_user.user_type != 'volunteer'
+      redirect_to root_path, alert: "Acesso não autorizado."
+    elsif action_name == 'host' && current_user.user_type != 'host'
+      redirect_to root_path, alert: "Acesso não autorizado."
+    end
+  end
+end

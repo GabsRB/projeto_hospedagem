@@ -6,15 +6,15 @@ class SessionsController < ApplicationController
     user = User.find_by(email: params[:session][:email].downcase)
     if user && user.authenticate(params[:session][:password])
       session[:user_id] = user.id
-      redirect_to dashboard_path, notice: "Entrada com sucesso!"
+      redirect_to user_path(user)
     else
-      flash.now[:danger] = "E-mail ou senha invalida. Tente NOvamente!"
+      flash.now[:alert] = 'Combinação de email/senha inválida'
       render :new
     end
   end
 
   def destroy
-    session[:user_id] = nil
-    redirect_to root_path, notice: "Ação de saida com sucesso!"
+    session.delete(:user_id) 
+    redirect_to root_path, notice: 'Você foi desconectado com sucesso.'
   end
 end

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tipo de usuario</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+</head>
+<body>
+<h1>Escolha o Tipo de Usuário</h1>
+<%= form_for @user, url: update_user_type_path(@user), method: :patch do |f| %>
+  <%= f.label :user_type, "Escolha o tipo de usuário" %>
+  <%= f.radio_button :user_type, 'voluntario' %>
+  <%= f.label :user_type_voluntario, "Voluntário" %>
+  <%= f.radio_button :user_type, 'anfitriao' %>
+  <%= f.label :user_type_anfitriao, "Anfitrião" %>
+  <%= f.submit 'Próximo' %>
+<% end %>
+
+</body>
+</html>
+
+

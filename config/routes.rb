@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'anfitriao_dashboard/index'
+  get 'voluntario_dashboard/index'
   get 'home/index'
 
   # Define a rota raiz (minha página inicial) para minha aplicação. 
@@ -12,6 +14,7 @@ Rails.application.routes.draw do
   # Cria uma rota que responde a ação do GET para o URL '/signup'
   # Procesa os dados preenchidos no formulário de registro e cria um novo usuario
   post 'signup', to: 'users#create'
+  post '/users', to: 'users#create'
 
   # Cria uma rota que responde a ação do GET para o URL '/login'
   # Exibe formulário de entrada
@@ -23,16 +26,12 @@ Rails.application.routes.draw do
 
   # Cria uma rota que responde a ação do DELETE para o URL '/logout'
   # Destroi a sessão atual
-  delete 'logout', to: 'sessions#destroy'
+  delete '/logout', to: 'sessions#destroy'
+  
+  get 'choose_user_type/:id', to: 'users#choose_user_type', as: 'choose_user_type'
+  patch '/update_user_type/:id', to: 'users#update_user_type', as: 'update_user_type'
 
-  get 'user_type', to: 'users#user_type'
-  patch 'set_user_type', to: 'users#set_user_type'
-  get 'dashboard_volunteer', to: 'dashboards#volunteer', as: 'dashboard_volunteer'
-  get 'dashboard_host', to: 'dashboards#host', as: 'dashboard_host'
-
-  #Rota para a ação Dashboard do controlador page
-  get 'dashboard', to: 'page#dashboard'
-  #resources  :edit
- 
+  get 'voluntario_dashboard', to: 'voluntario_dashboard#index', as: 'voluntario_dashboard'
+  get 'anfitriao_dashboard', to: 'anfitriao_dashboard#index', as: 'anfitriao_dashboard'
   resources :users, only: [:new, :create]
 end

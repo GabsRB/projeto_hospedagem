@@ -6,55 +6,46 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to new_user_type_path(user_id: @user.id)
+      redirect_to choose_user_type_path(@user) # Redireciona para a tela de escolha do tipo de usuário
     else
       render :new
     end
   end
 
   def user_type
-    @user = User.new
+    @user = User.find(session[:user_id])
   end
 
-  def set_user_type
+  def choose_user_type
     @user = User.find(params[:id])
-    @user.update(user_type_params)
-    if @user.save
-      if @user.user_type == 'voluntario'
-        redirect_to volunteers_dashboard_path
+  end
+
+  def update_user_type
+    @user = User.find(params[:id])
+  
+    if @user.update(user_params)
+      Rails.logger.debug "User type after update: #{@user.user_type}"
+      case @user.user_type
+      when 'voluntario'
+        redirect_to voluntario_dashboard_path
+      when 'anfitriao'
+        redirect_to anfitriao_dashboard_path
       else
-        redirect_to hosts_dashboard_path
+        redirect_to root_path, alert: "Tipo de usuário inválido."
       end
     else
-      render :user_type
+      render :edit, alert: "Não foi possível atualizar o tipo de usuário."
     end
   end
-
+  
   private
 
   def user_type_params
     params.require(:user).permit(:user_type)
   end
-
-  private
-
   def user_params
-    params.require(:user).permit(:email, :password, :password_confirmation)
+    params.require(:user).permit(:email, :password, :password_confirmation, :user_type)
   end
-
-  def user_type_params
-    params.require(:user).permit(:user_type)
-  end
-
-  def appropriate_dashboard_path(user)
-    case user.user_type
-    when 'voluntário'
-      volunteers_dashboard_path
-    when 'anfitrião'
-      hosts_dashboard_path
-    else
-      root_path
-    end
-  end
+  
 end
 

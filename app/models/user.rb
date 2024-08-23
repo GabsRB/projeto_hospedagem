@@ -1,10 +1,11 @@
 class User < ApplicationRecord
-    has_secure_password
+      has_secure_password
 
-    validates :email, presence: true
-    VALID_EMAIL_FORMAT= /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i
-    validates :password, presence: true, length: { minimum: 6 }, confirmation: true
-    validates :password_confirmation, presence: true
-    before_save { self.email = email.downcase }
-    validates :user_type, presence: true, inclusion: { in: %w(voluntario anfitriao) }
-end
+      validates :email, presence: true, uniqueness: true
+      validates :password, presence: true, length: { minimum: 6 }, on: :create
+      validates :password_confirmation, presence: true, on: :create
+      validates :user_type, presence: true, on: :update
+    
+      enum user_type: { voluntario: 0, anfitriao: 1 }
+  end
+  
