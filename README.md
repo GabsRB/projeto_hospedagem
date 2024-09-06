@@ -1,11 +1,24 @@
-<img src="app/assets/banner_page-0001.jpg" height="350" align="center" >
-<h1 align="center">Projeto Host para voluntarios e mochileiros</h1>
-Site em desenvolvimento para mochileiros e voluntarios encontrarem hospedagem de forma gratuita, tendo somente como forma de troca, a mão vontuntaria. <br>
+# README
 
-https://www.figma.com/design/ksMClbI3afWYwuABqovK6Q/VolunToca?node-id=0-1&t=tQ039KDmJijZ0k82-1 <br>
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-Linguagens de programação e frameworks utlizadas:
-- HTML, CSS, JavaScript, Ruby on Rails, Angular e Boostrap;
+Things you may want to cover:
 
-Gems:
-- BCypt;
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

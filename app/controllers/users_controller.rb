@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  skip_before_action :require_login, only: [:new, :create]
+  
   def new
     @user = User.new
   end
@@ -6,7 +8,8 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      redirect_to choose_user_type_path(@user) # Redireciona para a tela de escolha do tipo de usuário
+      session[:user_id] = @user.id  
+      redirect_to choose_user_type_path(@user) 
     else
       render :new
     end
@@ -21,28 +24,32 @@ class UsersController < ApplicationController
   end
 
   def update_user_type
+    #Rails.logger.debug "\n\nparams:#{params.inspect}\n\n"
     @user = User.find(params[:id])
+    #user_local = @user.update(user_params)
   
     if @user.update(user_params)
-      Rails.logger.debug "User type after update: #{@user.user_type}"
+      Rails.logger.debug "User Type: #{@user.user_type}"
+      session[:user_id] ||= @user.id
       case @user.user_type
       when 'voluntario'
         redirect_to voluntario_dashboard_path
       when 'anfitriao'
         redirect_to anfitriao_dashboard_path
       else
-        redirect_to root_path, alert: "Tipo de usuário inválido."
+        redirect_to root_path
       end
     else
-      render :edit, alert: "Não foi possível atualizar o tipo de usuário."
+      render :choose_user_type
     end
   end
-  
+
   private
 
   def user_type_params
     params.require(:user).permit(:user_type)
   end
+
   def user_params
     params.require(:user).permit(:email, :password, :password_confirmation, :user_type)
   end

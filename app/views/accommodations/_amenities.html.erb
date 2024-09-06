@@ -1,0 +1,16 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+  
+    <%= f.hidden_field :current_step %>
+  
+    <div>
+    <%= f.label :amenities, "Comodidades" %>
+    <%= f.collection_check_boxes :amenities, [['Wi-Fi', 'Wi-Fi'], ['Lavanderia', 'Lavanderia']], :last, :first %>
+  </div>
+    
+    <%= f.submit "Próximo" %>
+
+<% if !@accommodation.first_step? %>
+  <%= f.submit "Voltar", name: "previous_button" %>
+<% end %>
+
+<% end %>

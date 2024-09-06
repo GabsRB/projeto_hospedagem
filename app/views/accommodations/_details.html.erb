@@ -1,0 +1,23 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+    <%= f.hidden_field :current_step %>
+  
+    <div>
+      <%= f.label :title, "Título da Acomodação" %>
+      <%= f.text_field :title, required: true %>
+    </div>
+    <div>
+      <%= f.label :description, "Descrição" %>
+      <%= f.text_area :description, required: true %>
+    </div>
+    <div>
+      <%= f.label :accommodation_type, "Tipo de Acomodação" %>
+      <%= f.select :accommodation_type, options_for_select(['Casa', 'Apartamento', 'Fazenda']), required: true %>
+    </div>
+    <div>
+      <%= f.label :vacancies, "Número de Vagas Disponíveis" %>
+      <%= f.number_field :vacancies, required: true %>
+    </div>
+    
+    <%= f.submit "Próximo" %>
+  <% end %>
+  

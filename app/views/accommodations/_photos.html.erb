@@ -1,0 +1,14 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+<%= f.hidden_field :current_step %>
+  
+    <div>
+      <%= f.label :photos, "Fotos da Acomodação" %>
+      <%= f.file_field :photos, multiple: true, accept: "image/png,image/jpeg" %>
+    </div>
+    
+    <%= f.submit "Próximo" %>
+
+<% if !@accommodation.first_step? %>
+  <%= f.submit "Voltar", name: "previous_button" %>
+<% end %>
+<% end %>

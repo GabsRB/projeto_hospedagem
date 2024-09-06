@@ -1,0 +1,18 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+  <%= f.hidden_field :current_step %>
+
+  <% case @accommodation.current_step %>
+  <% when 'details' %>
+    <%= render 'details', f: f %>
+  <% when 'location' %>
+    <%= render 'location', f: f %>
+  <% when 'amenities' %>
+    <%= render 'amenities', f: f %>
+  <% when 'photos' %>
+    <%= render 'photos', f: f %>
+  <% when 'availability' %>
+    <%= render 'availability', f: f %>
+  <% when 'preferences' %>
+    <%= render 'preferences', f: f %>
+  <% end %>
+<% end %>

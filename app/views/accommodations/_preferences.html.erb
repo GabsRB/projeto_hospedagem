@@ -1,0 +1,22 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+<%= f.hidden_field :current_step %>
+  
+    <div>
+      <%= f.label :volunteer_preferences, "Tipo de Voluntário" %>
+      <%= f.text_area :volunteer_preferences %>
+    </div>
+    <div>
+      <%= f.label :work_schedule, "Horários de Trabalho" %>
+      <%= f.text_field :work_schedule %>
+    </div>
+    <div>
+      <%= f.label :tasks_description, "Tarefas Esperadas" %>
+      <%= f.text_area :tasks_description %>
+    </div>
+    
+    <%= f.submit "Próximo" %>
+
+<% if !@accommodation.first_step? %>
+  <%= f.submit "Voltar", name: "previous_button" %>
+<% end %>
+<% end %>

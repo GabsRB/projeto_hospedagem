@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <style>
+  .chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .my-message {
+  background-color: #DCF8C6;
+  text-align: right;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.their-message {
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 5px;
+  margin: 5px 0;
+}
+  </style>
+</head>
+<body>
+<h1>Suas Conversas</h1>
+<ul>
+  <% @conversations.each do |conversation| %>
+    <li>
+      <%= link_to conversation_path(conversation) do %>
+        <%= conversation.receiver_id == current_user.id ? conversation.sender.email : conversation.receiver.email %>
+      <% end %>
+    </li>
+  <% end %>
+</ul>
+</body>
+</html>

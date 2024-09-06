@@ -1,0 +1,26 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+<%= f.hidden_field :current_step %>
+  
+    <div>
+      <%= f.label :address, "Endereço Completo" %>
+      <%= f.text_field :address, required: true %>
+    </div>
+    <div>
+      <%= f.label :city, "Cidade" %>
+      <%= f.text_field :city, required: true %>
+    </div>
+    <div>
+      <%= f.label :state, "Estado" %>
+      <%= f.text_field :state, required: true %>
+    </div>
+    <div>
+      <%= f.label :postal_code, "CEP" %>
+      <%= f.text_field :postal_code, required: true %>
+    </div>
+    
+    <%= f.submit "Próximo" %>
+
+<% if !@accommodation.first_step? %>
+  <%= f.submit "Voltar", name: "previous_button" %>
+<% end %>
+  <% end %>

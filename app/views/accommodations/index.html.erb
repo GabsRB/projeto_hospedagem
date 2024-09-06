@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard Anfitrião</title>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+    .accommodations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    }
+
+    .accommodation-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.2s ease;
+    }
+
+    .accommodation-card:hover {
+    transform: scale(1.05);
+    }
+
+    .accommodation-image img {
+    width: 100%;
+    height: auto;
+    }
+
+    .accommodation-title h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    }
+
+    .accommodation-date {
+    color: #777;
+    }
+    </style>
+</head>
+<body>
+<div class="accommodations-grid">
+  <% @accommodations.each do |accommodation| %>
+    <div class="accommodation-card">
+      <%= link_to accommodation_path(accommodation) do %>
+        <div class="accommodation-image">
+          <%= image_tag accommodation.photo_url if accommodation.photo.attached? %>
+        </div>
+        <div class="accommodation-title">
+          <h3><%= accommodation.title %></h3>
+        </div>
+        <div class="accommodation-date">
+          <p>Criada em: <%= accommodation.created_at.strftime("%d/%m/%Y") %></p>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</div>
+</body>
+</html>

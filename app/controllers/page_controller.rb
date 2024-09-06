@@ -10,7 +10,7 @@ class PageController < ApplicationController
   
     def require_login
       unless session[:user_id]
-        redirect_to login_path, alert: "Você deve estar logado para entrar"
+        redirect_to login_path, alert: "Você deve estar logado para poder entrar"
       end
     end
   end

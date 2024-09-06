@@ -1,0 +1,11 @@
+<h1><%= @accommodation.title %></h1>
+<div class="accommodation-details">
+  <div class="accommodation-photo">
+    <%= image_tag @accommodation.photo_url if @accommodation.photo.attached? %>
+  </div>
+  <div class="accommodation-info">
+    <p><strong>Descrição:</strong> <%= @accommodation.description %></p>
+    <p><strong>Endereço:</strong> <%= @accommodation.address %></p>
+    <p><strong>Disponibilidade:</strong> <%= @accommodation.available_dates %></p>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<%= form_with model: @accommodation, url: accommodations_path, method: :post do |f| %>
+<%= f.hidden_field :current_step %>
+  
+    
+    <div>
+      <%= f.label :min_stay, "Duração Mínima da Estadia" %>
+      <%= f.number_field :min_stay %>
+    </div>
+    <div>
+      <%= f.label :max_stay, "Duração Máxima da Estadia" %>
+      <%= f.number_field :max_stay %>
+    </div>
+    
+    <%= f.submit "Próximo" %>
+
+<% if !@accommodation.first_step? %>
+  <%= f.submit "Voltar", name: "previous_button" %>
+<% end %>
+<% end %>

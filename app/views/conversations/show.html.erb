@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <%= csrf_meta_tags %>
+  <%= csp_meta_tag %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+  <style>
+  .chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  .my-message {
+  background-color: #DCF8C6;
+  text-align: right;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.their-message {
+  background-color: #FFFFFF;
+  text-align: left;
+  padding: 5px;
+  margin: 5px 0;
+}
+  </style>
+</head>
+<body>
+<h1>Chat</h1>
+<div class="chat-box">
+  <% @messages.each do |message| %>
+    <div class="<%= message.user == current_user ? 'my-message' : 'their-message' %>">
+      <p><%= message.content %></p>
+    </div>
+  <% end %>
+</div>
+
+<%= form_with(model: [ @conversation, Message.new ], local: true) do |form| %>
+  <div>
+    <%= form.text_area :content, rows: 3 %>
+  </div>
+  <div>
+    <%= form.submit 'Enviar' %>
+  </div>
+<% end %>
+</body>
+</html>
