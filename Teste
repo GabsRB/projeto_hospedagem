@@ -1,0 +1,40 @@
+teste
+
+rails generate model Reserva user:references accommodation:references status:string
+rails db:migrate
+
+rails generate controller Reservas new create
+
+class ReservasController < ApplicationController
+  before_action :authenticate_user!
+
+  def new
+    @accommodation = Accommodation.find(params[:accommodation_id])
+    @reserva = Reserva.new
+  end
+
+  def create
+    @accommodation = Accommodation.find(params[:accommodation_id])
+    @reserva = Reserva.new(user: current_user, accommodation: @accommodation, status: 'pendente')
+
+    if @reserva.save
+      redirect_to dashboard_volunteer_path, notice: 'Reserva realizada com sucesso!'
+    else
+      render :new
+    end
+  end
+end
+
+
+
+<h1>Reservar Hospedagem: <%= @accommodation.title %></h1>
+
+<p><strong>Localização:</strong> <%= @accommodation.location %></p>
+<p><strong>Vagas Disponíveis:</strong> <%= @accommodation.vacancies %></p>
+
+<%= form_with model: @reserva, url: reservas_path(accommodation_id: @accommodation.id), local: true do |f| %>
+  <p>Você está prestes a reservar esta hospedagem. Deseja continuar?</p>
+  <%= f.submit 'Confirmar Reserva', class: 'btn btn-primary' %>
+<% end %>
+
+resources :reservas, only: [:new, :create]
